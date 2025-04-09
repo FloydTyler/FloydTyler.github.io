@@ -1,7 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	content="width=device-width, initial-scale=1.0">
+	<title>Home Page</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<header>
+	<a href="#" class="logo">My Logo</a>
+ <div class="menutoggle"></div>
+ <nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About Us</a></li>
+		<li><a href="#">Events</a></li>
+		<li><a href="#">Sermons</a></li>
+		<li><a href="#">Daycare</a></li>
+		<li><a href="#">Contact Us</a></li>
+		</ul>
+	</nav>
+	</header>
+	<script>
+	Let menuToggle = document.querySelector('.menuToggle');
+	Let header = document.querySelector('headium');
+	menuToggle.onclick = function(){
+	header.classlist.toggle('active');
+	</script>
 </html>
