@@ -67,7 +67,7 @@
 	header nav ul li {
 		width:100%;
 	}
-	.menuToggle{
+	.menuToggLe{
 		position: relative;
 		width: 0px;
 		height: 50px;
@@ -76,7 +76,7 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.menuToggle::before { 
+	.menuToggLe::before { 
 	content: '';
 	position: absolute;
 	width:100%;
@@ -85,7 +85,7 @@
 	transform:translateY(-12px);
 	box-shadow:0 12px #fff;
 	}
-	.menuToggle::after { 
+	.menuToggLe::after { 
 	content: '';
 	position: absolute;
 	width:100%;
@@ -93,13 +93,12 @@
 	background:#fff;
 	transform:translateY(12px);
 	}
-	header. active.menuToggle::before{
+	header.active .menuToggLe::before{
 		transform:rotate(45deg);
 		box-shadow:0 0 #fff;
 	}
-	header. active.menuToggle::after {
+	header.active menuToggLe::after {
 		transform:rotate(315deg);
-		box-shadow:0 0 #fff;
 	}
 }
 	
