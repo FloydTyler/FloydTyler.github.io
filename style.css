@@ -13,7 +13,7 @@
 	}
 	header
 	{
-		position:absolute;
+		position: absolute;
 		width: 100%;
 		min-height: 66px;
 		background: #B50B0B;
@@ -43,7 +43,7 @@
 		padding: 20px 25px;
 		text-decoration: space-between;
 	}
-	header ul li a:hover{
+	header ul li a: hover{
 		background: #950808;
 	}
 	
@@ -60,7 +60,7 @@
 		background:#445964;
 		display: none;
 	}
-	header.active nav {
+	header. active nav {
 		display: initial;
 	} 
 	
@@ -93,12 +93,13 @@
 	background: #fff;
 	transform: translateY(12px);
 	}
-	header.active .menuToggle::before{
+	header. active.menuToggle::before{
 		transform: rotate(45deg);
 		box-shadow: 0 0 #fff;
 	}
-header.active .menuToggle::after {
-	transform: rotate(315deg);
+	header. active.menuToggle::after {
+		transform: rotate(315deg);
+		box-shadow: 0 0 #fff;
 	}
 }
 	
