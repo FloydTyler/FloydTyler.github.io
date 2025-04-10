@@ -47,17 +47,35 @@
 		let currentIndex = 0;
 const images = document.querySelectorAll('.bg-image');
 
-// Set the first image to be visible initially
-images[currentIndex].style.opacity = 1;
+const imageUrls = [
+    "churchimageone.jpg",
+    "churchimagetwo.jpg",
+    "churchimagethree.jpg",
+    "churchimagefour.jpg",
+    "churchimagefive.jpg"
+];
 
+// Preload images
+const preloadImages = () => {
+    imageUrls.forEach(url => {
+        const img = new Image();
+        img.src = url;
+    });
+};
+
+// Change background function
 function changeBackground() {
     images[currentIndex].style.opacity = 0; // Fade out current image
     currentIndex = (currentIndex + 1) % images.length; // Move to the next image
     images[currentIndex].style.opacity = 1; // Fade in next image
 }
 
-// Change background every 5 seconds
-setInterval(changeBackground, 5000);
+// Call the preload function when the window loads
+window.onload = () => {
+    preloadImages();
+    images[currentIndex].style.opacity = 1; // Show the first image
+    setInterval(changeBackground, 5000); // Change background every 5 seconds
+};
 </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
