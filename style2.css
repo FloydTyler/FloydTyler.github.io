@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Times New Roman;
+}
+
+.Section_top {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("churchimageone.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite; /* Apply animation */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+@keyframes change {
+	0% {
+        background-image: url("churchimageone.jpg");
+    }
+    20% {
+        background-image: url("churchimagetwo.jpg");
+    }
+    40% {
+        background-image: url("churchimagethree.jpg");
+    }
+    60% {
+        background-image: url("churchimagefour.jpg");
+    }
+    80% {
+        background-image: url("churchimagefive.jpg");
+    }
+    100% {
+        background-image: url("churchimageone.jpg"); /* Loop back */
+    }
+}
