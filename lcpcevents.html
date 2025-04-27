@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">LCPC</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="index2.html#about-us">About Us</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="Worship.html">Worship</a></li>
+                <li><a href="daycare.html">Daycare</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+	<div class="blank-section-two">
+	<h1> Events </h1>
+			<div class="column-container">
+				<div class="column-one">
+					<h2>Schedule</h2>
+						
+						<p>April 20th - Easter Sunday, Rev. Tom Langston</p>
+						<p>April 27th - Rev. Holly Bannon</p>
+						<p>May 4th - Rev. Tom Langston</p>
+						<p>May 11th - Mother's Day; Rev. Don McCann</p>
+						<p>May 18th - Rev. Holly Bannon?</p>
+						<p>May 25th - Rev. Tom Langston</p>
+					
+				
+						<h3>The beautiful flowers in the sanctuary today were placed by Connie Roberts. Thank you Connie!</h3>
+						
+						<h2>We're Looking for a Pianist or Pipe Organist!</h2>
+						<p> Are you passionate about music and want to inspire others through worship?
+						Our church community is seeking a pianist or pipe organist to enhance our worship Services.</p>
+						<p> We'd Love to Hear from You!</p>
+						<p> For more information, please contact: (843) 374-2293 </p>
+						
+					</div>
+				<div class="column-one">
+					<img src="cross.jpg" alt="cross">
+				</div>
+				<div class="column-one">
+					<h2>Special Service Announcement:</h2>
+						<p>Join us for an "Join us for an Agape Meal on Maundy Thursday, April 17th at 5:30 p.m.
+						If you need help with transportation, please let us know! </p>
+					
+					<h3>The beautiful flowers in the sanctuary today were placed by Jane and Spencer Player in Loving Memory of Ellen and Julian Dixon.</h3>
+						<h2>Prayer Requests</h2>
+						<p> Vikki Brogdon </p>
+						<p>Danny Chandler</p>
+						<p>Mitchell Driggers</p>
+						<p>Susan W. Dennis</p>
+						<p>Susan Mims Greene</p>
+						<p>Viva Sickson Herscher</p>
+						<p>Wheeler Hill</p>
+						<p>Emma Grace Hunt </p>
+						<p>Melinda James</p>
+						<p>Kay Gotschall Latham</p>
+						<p>Gracie Pope</p>
+						<p>Dr. Jim Richardson</p>
+						<p>Margaret Robinson</p>
+						<p>Louise Wallace</p>
+						<p>Dianne Whitlock</p>
+						<p>Anne Lyons - Pres Home</p>
+						
+						</div>
+						
+			</div>
+			<div class="slider">
+			<h2>Previous Events</h2>
+        <img class="slide" src="event1.jpg" alt="Image 1">
+        <img class="slide" src="pinkflower.jpg" alt="Image 2">
+        <img class="slide" src="event2.jpg" alt="Image 3">
+    </div>
+    <script> let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active1');
+        if (i === index) {
+            slide.classList.add('active1');
+        }
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+setInterval(nextSlide, 3000);  // Change image every 3 seconds</script>
+		</div>	
+</main>
+
+
+	<div class="footer-content">
+			<p>&copy; 2025 lcpresbyterian. All rights reserved.</p>
+			</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let menuToggle = document.querySelector('.menuToggle');
+            let header = document.querySelector('header');
+
+            if (menuToggle) {
+                menuToggle.onclick = function () {
+                    header.classList.toggle('active');
+                }
+            }
+        });
+    </script>
+	
+	</body>

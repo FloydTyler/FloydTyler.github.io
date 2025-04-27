@@ -1,0 +1,506 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Times New Roman;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+	header {
+            position: relative;
+            width: 100%;
+            min-height: 66px;
+            background: #B50B0B;
+            padding: 0 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+			z-index: 10;
+        }
+		
+
+        header .logo {
+            color: #fff;
+            font-size: 1.75em;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        header ul {
+            position: relative;
+        }
+
+        header ul li {
+            position: relative;
+            list-style: none;
+            float: left;
+        }
+
+        header ul li a {
+            color: #fff;
+            font-size: 1.1em;
+            padding: 20px 25px;
+            text-decoration: none;
+        }
+
+        header ul li a:hover {
+            background: #950808;
+        }
+
+
+.Section_top {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    position: relative;
+    background-image: url("churchimageone.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    animation: change 20s infinite; /* Apply animation */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+	text-shadow: 2px 2px 8px #000000;
+
+}
+.content_one {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+	text-shadow: 2px 2px 8px #000000;
+}
+.daycare_Cover {
+    height: 60vh;
+	flex: 1;	/* Full viewport height */
+	object-fit: cover;
+    background-image: url("daycare.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+	object-fit: cover;
+}
+.ContactUs_Cover{
+	height: 60vh;
+	flex: 1;	/* Full viewport height */
+    background-image: url("churchdrawing.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 75% 125%;
+    text-align: center;
+	object-fit: fill;
+}
+.content_two {
+	font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+	text-shadow: 
+    2px 2px 0px #fff, 
+    -2px -2px 0px #fff, 
+    2px -2px 0px #fff, 
+    -2px 2px 0px #fff;
+	
+}
+.content_two h1 {
+	
+	Font-size: 60px;
+	
+}
+
+.blank-section ul{
+	padding-bottom: 20px;
+
+}
+.blank-section ul li{
+	text-align: left;
+
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;  /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;         /* Full width of the slider */
+    height: 400px;      /* Fixed height for all images, adjust as needed */
+    object-fit: cover;   /* Ensures images cover the area without distortion */
+	border: 5px solid #000; /
+}
+.active1{
+display:block;
+
+}
+
+
+
+
+@keyframes change {
+    0% {
+        background-image: url("churchimageone.jpg");
+    }
+    20% {
+        background-image: url("churchimagetwo.jpg");
+    }
+    40% {
+        background-image: url("churchimagethree.jpg");
+    }
+    60% {
+        background-image: url("churchimagefour.jpg");
+    }
+    80% {
+        background-image: url("churchint.jpg");
+    }
+    100% {
+        background-image: url("churchimageone.jpg"); /* Loop back */
+    }
+}
+
+
+.blank-section {
+    width: 100%;
+    min-height: calc(100vh - 100px); /* Adjust if needed */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center text */
+}
+.blank-section-one {
+	  width: 100%;
+    min-height: calc(100vh - 100px); /* Adjust if needed */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center text */
+}
+.blank-section-one p{
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.blank-section-one h3{
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.blank-section h2{ 
+    margin: 0; /* Space between items */
+    display: block; /* Ensure they are block elements */
+	
+}
+.blank-section h1 {
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+.blank-section h3{
+	padding-top: 10px;
+}
+
+.blank-section p{
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	
+}
+
+	
+.blank-section-two {
+    width: 100%;
+    min-height: calc(100vh - 100px); /* Adjust if needed */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center text */
+    margin: 0 ; /* Ensure no outer margins */
+}
+
+.blank-section-two p {
+    max-width: 100%;
+    text-align: center;
+    margin: 5px 0; /* Reduce vertical spacing between paragraphs */
+    line-height: 1.2; /* Adjust line height for tighter spacing */
+	
+}
+
+.blank-section-two h3{
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+}
+.image-container {
+    width: 100%;
+    overflow: hidden; /* Hide overflow if needed */
+}
+
+.image-container img {
+	margin:0 auto;
+    max-width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+    .image-container {
+        margin: 0 20px; /* Add side margins for desktop */
+    }
+    .image-container img {
+        width: auto; /* Allow image to maintain its size */
+        max-width: calc(80% - 40px); /* Account for margins */
+    }
+}
+
+
+.rounded {
+    border-radius: 60%;   /* Apply 50% radius to specific images */
+	padding-top: 20px;
+
+}
+/* Basic styles for the columns */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap */
+    justify-content: space-around; /* Space out columns */
+    margin: 0 -15px; /* Adjust margin to prevent overflow */
+}
+
+.column {
+    flex: 0.5; /* Allow columns to grow */
+    max-width: 100%; /* Adjust for desktop view */
+    padding: 15px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width */
+	margin:0 50px;
+}
+.column-container {
+    display: flex;               /* Use flexbox for layout */
+    flex-wrap: wrap;            /* Allow columns to wrap on smaller screens */
+    justify-content: space-between; /* Distribute space between columns */
+    width: 100%;                 /* Full width */
+    max-width: 1200px;          /* Optional: set a max width */
+    margin: 0 auto;             /* Center the container */
+}
+
+.column-one {
+    flex: 1;                    /* Allow this column to grow */
+    min-width: 300px;           /* Set a minimum width */
+    padding: 15px;              /* Padding for space inside */
+    box-sizing: border-box;      /* Include padding in width */
+    margin: 0 10px;             /* Add horizontal margin */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .column-one {
+        flex: 1 1 100%;         /* Full width on smaller screens */
+        margin: 10px 0;         /* Add vertical margin */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .column-one {
+        flex: 1 1 calc(50% - 20px); /* Two columns on medium screens */
+    }
+}
+.map-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.map {
+    flex: 1;
+    min-width: 300px;       /* Minimum width for larger screens */
+    max-width: 500px;       /* Maximum width for larger screens */
+    height: 350px;          /* Default height */
+	border: 5px solid #000;
+}
+.text-content p {
+	text-align: left;
+}
+.text-content {
+    flex: 1;
+    margin-right: 20px;     /* Space between map and text */
+	
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .map-container {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center;    /* Center items */
+    }
+    
+    .map {
+        width: 100%;           /* Full width on mobile */
+        height: 200px;         /* Reduced height */
+        max-height: 300px;     /* Set a maximum height */
+    }
+
+    /* Ensure iframe is responsive */
+    .map iframe {
+        width: 100%;           /* Full width */
+        height: 100%;          /* Full height */
+    }
+
+    .text-content {
+        margin-left: 0;        /* Remove left margin on mobile */
+        margin-top: 20px;      /* Add top margin for spacing */
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .column {
+        max-width: 100%; /* Stack columns on mobile */
+        flex: 100%; /* Ensure full width */
+    }
+}
+
+.footer-content {
+    width: 100%;
+    background-color: #333; /* Adjust as needed */
+    color: #fff; /* Text color */
+    padding: 20px; /* Space in the footer */
+    position: relative;
+    margin-top: 20px; /* Add margin if needed */
+	text-align: center;
+}
+
+/* Responsive styles */
+			@media (max-width: 900px) {
+				header {
+					padding: 10px 20px;
+				}
+
+				header nav {
+					position: absolute;
+					width: 100%;
+					top: 66px;
+					left: 0;
+					background: #445964;
+					display: none; /* Hide by default */
+				}
+
+				header.active nav {
+					display: block; /* Show when active */
+				}
+
+				header nav ul li {
+					padding: 0.5em 1em; /* Smaller padding for mobile */
+					font-size: 1em; /* Adjust font size for smaller screens */
+					width: 100%; /* Full width for mobile */
+				}
+			}
+
+			@media (max-width: 600px) {
+				header ul li a {
+					padding: 0.5em 0.75em; /* Further reduce padding for very small screens */
+					font-size: 0.9em; /* Adjust font size further */
+				}
+				.ContactUs_Cover{
+					background-size: cover;
+				}
+				.daycare_Cover{
+					background-size: cover;
+				}
+			}
+			@media (max-width: 700px) {
+				header ul li a {
+					padding: 0.5em 0.75em; /* Further reduce padding for very small screens */
+					font-size: 0.11em; /* Adjust font size further */
+				}
+			}
+			@media (max-width: 800px) {
+				header ul li a {
+					padding: 0.5em 0.75em; /* Further reduce padding for very small screens */
+					font-size: 1em; /* Adjust font size further */
+				}
+			}
+			
+	
+			.menuToggle {
+                position: relative;
+                width: 40px;
+                height: 50px;
+                cursor: pointer;
+                display: flex;
+				flex-direction:column;
+                justify-content: center;
+                align-items: center;
+            }
+			@media (min-width: 900px) {
+    .menuToggle {
+        display: none; /* Hide the menu toggle on desktop */
+    }
+}
+
+            .menuToggle::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background: #fff;
+                transform: translateY(-12px);
+                box-shadow: 0 12px #fff;
+            }
+
+            .menuToggle::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background: #fff;
+                transform: translateY(12px);
+            }
+
+            header.active .menuToggle::before {
+                transform: rotate(45deg);
+                box-shadow: 0 0 #000;
+            }
+
+            header.active .menuToggle::after {
+                transform: rotate(315deg);
+                box-shadow: 0 0 #000;
+            }
+			}
+        /* Add this to your existing CSS */
+
