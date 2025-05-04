@@ -59,7 +59,7 @@ body, html {
 
 .Section_top {
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     overflow: hidden;
     position: relative;
     background-image: url("churchimageone.jpg");
@@ -67,7 +67,7 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    animation: change 20s infinite; /* Apply animation */
+    animation: change 20s infinite; 
 }
 
 .content {
@@ -89,7 +89,7 @@ body, html {
 }
 .daycare_Cover {
     height: 60vh;
-	flex: 1;	/* Full viewport height */
+	flex: 1;	
 	object-fit: cover;
     background-image: url("daycare.jpg");
     background-position: top center;
@@ -100,7 +100,7 @@ body, html {
 }
 .ContactUs_Cover{
 	height: 60vh;
-	flex: 1;	/* Full viewport height */
+	flex: 1;	
     background-image: url("churchdrawing.jpg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -141,17 +141,17 @@ body, html {
 .slider {
     position: relative;
     width: 100%;
-    max-width: 600px;  /* Adjust as needed */
+    max-width: 600px; 
     margin: auto;
     overflow: hidden;
 }
 
 .slide {
     display: none;
-    width: 100%;         /* Full width of the slider */
-    height: 400px;      /* Fixed height for all images, adjust as needed */
-    object-fit: cover;   /* Ensures images cover the area without distortion */
-	border: 5px solid #000; /
+    width: 100%;         
+    height: 400px;     
+    object-fit: cover;   
+	border: 5px solid #000; 
 }
 .active1{
 display:block;
@@ -178,30 +178,30 @@ display:block;
         background-image: url("churchint.jpg");
     }
     100% {
-        background-image: url("churchimageone.jpg"); /* Loop back */
+        background-image: url("churchimageone.jpg"); 
     }
 }
 
 
 .blank-section {
     width: 100%;
-    min-height: calc(100vh - 100px); /* Adjust if needed */
+    min-height: calc(100vh - 100px); 
     background-color: #fff;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center horizontally */
-    padding: 20px; /* Add padding */
-    text-align: center; /* Center text */
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    text-align: center; 
 }
 .blank-section-one {
 	  width: 100%;
-    min-height: calc(100vh - 100px); /* Adjust if needed */
+    min-height: calc(100vh - 100px); 
     background-color: #fff;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center horizontally */
-    padding: 20px; /* Add padding */
-    text-align: center; /* Center text */
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    text-align: center; 
 }
 .blank-section-one p{
 	width: 70%;
@@ -219,8 +219,8 @@ display:block;
 }
 
 .blank-section h2{ 
-    margin: 0; /* Space between items */
-    display: block; /* Ensure they are block elements */
+    margin: 0; 
+    display: block; 
 	
 }
 .blank-section h1 {
@@ -243,21 +243,21 @@ display:block;
 	
 .blank-section-two {
     width: 100%;
-    min-height: calc(100vh - 100px); /* Adjust if needed */
+    min-height: calc(100vh - 100px); 
     background-color: #fff;
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center horizontally */
-    padding: 20px; /* Add padding */
-    text-align: center; /* Center text */
-    margin: 0 ; /* Ensure no outer margins */
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+    text-align: center; 
+    margin: 0 ; 
 }
 
 .blank-section-two p {
     max-width: 100%;
     text-align: center;
-    margin: 5px 0; /* Reduce vertical spacing between paragraphs */
-    line-height: 1.2; /* Adjust line height for tighter spacing */
+    margin: 5px 0; 
+    line-height: 1.2; 
 	
 }
 
@@ -268,76 +268,76 @@ display:block;
 }
 .image-container {
     width: 100%;
-    overflow: hidden; /* Hide overflow if needed */
+    overflow: hidden; 
 }
 
 .image-container img {
 	margin:0 auto;
-    max-width: 100%; /* Make the image fill the container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below the image */
+    max-width: 100%; 
+    height: auto;
+    display: block; 
 }
 
 /* Desktop styles */
 @media (min-width: 768px) {
     .image-container {
-        margin: 0 20px; /* Add side margins for desktop */
+        margin: 0 20px;
     }
     .image-container img {
-        width: auto; /* Allow image to maintain its size */
-        max-width: calc(80% - 40px); /* Account for margins */
+        width: auto; 
+        max-width: calc(80% - 40px); 
     }
 }
 
 
 .rounded {
-    border-radius: 60%;   /* Apply 50% radius to specific images */
+    border-radius: 60%;   
 	padding-top: 20px;
 
 }
 /* Basic styles for the columns */
 .row {
     display: flex;
-    flex-wrap: wrap; /* Allow columns to wrap */
-    justify-content: space-around; /* Space out columns */
-    margin: 0 -15px; /* Adjust margin to prevent overflow */
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    margin: 0 -15px; 
 }
 
 .column {
-    flex: 0.5; /* Allow columns to grow */
-    max-width: 100%; /* Adjust for desktop view */
-    padding: 15px; /* Add padding for spacing */
-    box-sizing: border-box; /* Include padding in width */
+    flex: 0.5; 
+    max-width: 100%;
+    padding: 15px; 
+    box-sizing: border-box; 
 	margin:0 50px;
 }
 .column-container {
-    display: flex;               /* Use flexbox for layout */
-    flex-wrap: wrap;            /* Allow columns to wrap on smaller screens */
-    justify-content: space-between; /* Distribute space between columns */
-    width: 100%;                 /* Full width */
-    max-width: 1200px;          /* Optional: set a max width */
-    margin: 0 auto;             /* Center the container */
+    display: flex;              
+    flex-wrap: wrap;            
+    justify-content: space-between; 
+    width: 100%;                
+    max-width: 1200px;          
+    margin: 0 auto;             
 }
 
 .column-one {
-    flex: 1;                    /* Allow this column to grow */
-    min-width: 300px;           /* Set a minimum width */
-    padding: 15px;              /* Padding for space inside */
-    box-sizing: border-box;      /* Include padding in width */
-    margin: 0 10px;             /* Add horizontal margin */
+    flex: 1;                   
+    min-width: 300px;           
+    padding: 15px;              
+    box-sizing: border-box;     
+    margin: 0 10px;             
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .column-one {
-        flex: 1 1 100%;         /* Full width on smaller screens */
-        margin: 10px 0;         /* Add vertical margin */
+        flex: 1 1 100%;         
+        margin: 10px 0;         
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .column-one {
-        flex: 1 1 calc(50% - 20px); /* Two columns on medium screens */
+        flex: 1 1 calc(50% - 20px); 
     }
 }
 .map-container {
@@ -348,9 +348,9 @@ display:block;
 
 .map {
     flex: 1;
-    min-width: 300px;       /* Minimum width for larger screens */
-    max-width: 500px;       /* Maximum width for larger screens */
-    height: 350px;          /* Default height */
+    min-width: 300px;       
+    max-width: 500px;      
+    height: 350px;          
 	border: 5px solid #000;
 }
 .text-content p {
@@ -358,50 +358,50 @@ display:block;
 }
 .text-content {
     flex: 1;
-    margin-right: 20px;     /* Space between map and text */
+    margin-right: 20px;     
 	
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
     .map-container {
-        flex-direction: column; /* Stack items on smaller screens */
-        align-items: center;    /* Center items */
+        flex-direction: column; 
+        align-items: center;    
     }
     
     .map {
-        width: 100%;           /* Full width on mobile */
-        height: 200px;         /* Reduced height */
-        max-height: 300px;     /* Set a maximum height */
+        width: 100%;           
+        height: 200px;         
+        max-height: 300px;   
     }
 
     /* Ensure iframe is responsive */
     .map iframe {
-        width: 100%;           /* Full width */
-        height: 100%;          /* Full height */
+        width: 100%;           
+        height: 100%;         
     }
 
     .text-content {
-        margin-left: 0;        /* Remove left margin on mobile */
-        margin-top: 20px;      /* Add top margin for spacing */
+        margin-left: 0;       
+        margin-top: 20px;     
     }
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
     .column {
-        max-width: 100%; /* Stack columns on mobile */
-        flex: 100%; /* Ensure full width */
+        max-width: 100%; 
+        flex: 100%;
     }
 }
 
 .footer-content {
     width: 100%;
-    background-color: #333; /* Adjust as needed */
-    color: #fff; /* Text color */
-    padding: 20px; /* Space in the footer */
+    background-color: #333;
+    color: #fff; 
+    padding: 20px; 
     position: relative;
-    margin-top: 20px; /* Add margin if needed */
+    margin-top: 20px; 
 	text-align: center;
 }
 
@@ -417,24 +417,24 @@ display:block;
 					top: 66px;
 					left: 0;
 					background: #445964;
-					display: none; /* Hide by default */
+					display: none;
 				}
 
 				header.active nav {
-					display: block; /* Show when active */
+					display: block; 
 				}
 
 				header nav ul li {
-					padding: 0.5em 1em; /* Smaller padding for mobile */
-					font-size: 1em; /* Adjust font size for smaller screens */
-					width: 100%; /* Full width for mobile */
+					padding: 0.5em 1em; 
+					font-size: 1em; 
+					width: 100%; 
 				}
 			}
 
 			@media (max-width: 600px) {
 				header ul li a {
-					padding: 0.5em 0.75em; /* Further reduce padding for very small screens */
-					font-size: 0.9em; /* Adjust font size further */
+					padding: 0.5em 0.75em; 
+					font-size: 0.9em; 
 				}
 				.ContactUs_Cover{
 					background-size: cover;
@@ -445,14 +445,14 @@ display:block;
 			}
 			@media (max-width: 700px) {
 				header ul li a {
-					padding: 0.5em 0.75em; /* Further reduce padding for very small screens */
-					font-size: 0.11em; /* Adjust font size further */
+					padding: 0.5em 0.75em; 
+					font-size: 0.11em;
 				}
 			}
 			@media (max-width: 800px) {
 				header ul li a {
-					padding: 0.5em 0.75em; /* Further reduce padding for very small screens */
-					font-size: 1em; /* Adjust font size further */
+					padding: 0.5em 0.75em; 
+					font-size: 1em; 
 				}
 			}
 			
@@ -502,5 +502,4 @@ display:block;
                 box-shadow: 0 0 #000;
             }
 			}
-        /* Add this to your existing CSS */
 
